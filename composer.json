@@ -1,0 +1,23 @@
+{
+    "name": "storinka/invoke-example",
+    "description": "Storina Invoke application example",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kohutd",
+            "email": "davyd.kohut@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "storinka/invoke": "dev-master",
+        "storinka/invoke-service-container": "dev-master",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Reflect\\": "src"
+        }
+    }
+}

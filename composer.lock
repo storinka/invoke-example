@@ -1,0 +1,109 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "2fdb36d97280dd8192d4486374354b41",
+    "packages": [
+        {
+            "name": "storinka/invoke",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/storinka/invoke.git",
+                "reference": "4bc19fd8998126719fea7dfdb6ed9cf003e8fdad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/storinka/invoke/zipball/4bc19fd8998126719fea7dfdb6ed9cf003e8fdad",
+                "reference": "4bc19fd8998126719fea7dfdb6ed9cf003e8fdad",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": "^7.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Invoke\\": "src"
+                },
+                "files": [
+                    "src/utils.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Davyd Kohut",
+                    "email": "expexes@gmail.com"
+                }
+            ],
+            "description": "invoke core library",
+            "support": {
+                "issues": "https://github.com/storinka/invoke/issues",
+                "source": "https://github.com/storinka/invoke/tree/v0.0.16"
+            },
+            "time": "2021-04-04T00:28:16+00:00"
+        },
+        {
+            "name": "storinka/invoke-service-container",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/storinka/invoke-service-container.git",
+                "reference": "df5fb7e9e231822c0dcf370f0dc79ebcdc33005d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/storinka/invoke-service-container/zipball/df5fb7e9e231822c0dcf370f0dc79ebcdc33005d",
+                "reference": "df5fb7e9e231822c0dcf370f0dc79ebcdc33005d",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Invoke\\Di\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Davyd Kohut",
+                    "email": "davyd.kohut@gmail.com"
+                }
+            ],
+            "description": "Invoke Service Container",
+            "support": {
+                "issues": "https://github.com/storinka/invoke-service-container/issues",
+                "source": "https://github.com/storinka/invoke-service-container/tree/v0.0.2"
+            },
+            "time": "2021-04-14T15:05:24+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "storinka/invoke": 20,
+        "storinka/invoke-service-container": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
