@@ -1,6 +1,6 @@
 <?php
 
-use Reflect\Functions\Dec2HexFunction;
+use App\Functions\Dec2HexFunction;
 
 return [
     0 => [

@@ -1,29 +1,24 @@
 <?php
 
-namespace Reflect\Functions;
+namespace App\Functions;
 
-use Invoke\InvokeFunction;
-use Invoke\Typesystem\Type;
-use Reflect\Services\ConversionService;
+use App\AppFunction;
+use Invoke\Typesystem\Types;
 
-class Dec2HexFunction extends InvokeFunction
+/**
+ * Convert an integer to hexadecimal.
+ */
+class Dec2HexFunction extends AppFunction
 {
-    protected ConversionService $conversionService;
-
-    public function __construct(ConversionService $conversionService)
-    {
-        $this->conversionService = $conversionService;
-    }
-
     public static function params(): array
     {
         return [
-            "dec" => Type::Int,
+            "dec" => Types::Int,
         ];
     }
 
     public function handle(int $dec): string
     {
-        return $this->conversionService->dec2hex($dec);
+        return dechex($dec);
     }
 }
