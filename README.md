@@ -1,15 +1,23 @@
 # Invoke
 
-Invoke example project.
+Example project.
 
-## How to run
+## Running
 
 ```
 php -S localhost:5000 public/index.php
 ```
 
-## How to use
+## Usage
+
+GET:
 
 ```
-curl "localhost:5000/invoke/1/dec2hex?dec=12"
+curl "localhost:5000/invoke/dec2hex?dec=12"
+```
+
+POST:
+
+```
+curl -X POST "localhost:5000/invoke/dec2hex" --data '{ "dec": 12 }'
 ```

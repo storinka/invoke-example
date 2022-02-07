@@ -1,11 +1,15 @@
 <?php
 
-use Invoke\InvokeMachine;
+use Invoke\Invoke;
 
 require_once dirname(__DIR__) . "/vendor/autoload.php";
 
-$functions = require_once("config/functions.php");
+$methods = require_once("config/methods.php");
+$config = require_once("config/invoke.php");
 
-InvokeMachine::setup($functions);
+Invoke::setup(
+    $methods,
+    $config
+);
 
-InvokeMachine::handleRequest();
+Invoke::serve();

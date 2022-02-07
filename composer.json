@@ -11,7 +11,7 @@
   ],
   "minimum-stability": "dev",
   "require": {
-    "storinka/invoke": "^v1",
+    "storinka/invoke": "^v2",
     "ext-json": "*"
   },
   "autoload": {
