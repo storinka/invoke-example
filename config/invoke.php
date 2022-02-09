@@ -2,6 +2,6 @@
 
 return [
     "server" => [
-        "pathPrefix" => "invoke",
+        "pathPrefix" => "",
     ],
 ];

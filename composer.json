@@ -1,22 +1,26 @@
 {
-  "name": "storinka/invoke-example",
-  "description": "Invoke project example",
-  "type": "project",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Davyd Kohut",
-      "email": "davyd.kohut@gmail.com"
+    "name": "storinka/invoke-example",
+    "description": "Invoke project example",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Davyd Kohut",
+            "email": "davyd.kohut@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.1",
+        "storinka/invoke": "^v2",
+        "ext-json": "*",
+        "cycle/orm": "2.x-dev",
+        "cycle/annotated": "3.x-dev",
+        "phpdocumentor/reflection-docblock": "5.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
     }
-  ],
-  "minimum-stability": "dev",
-  "require": {
-    "storinka/invoke": "^v2",
-    "ext-json": "*"
-  },
-  "autoload": {
-    "psr-4": {
-      "App\\": "src"
-    }
-  }
 }
